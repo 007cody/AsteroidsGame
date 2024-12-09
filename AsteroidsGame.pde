@@ -28,6 +28,8 @@ public void draw()
     float d = dist((float)bob.myCenterX, (float)bob.myCenterY, (float)asteroids.get(i).myCenterX, (float)asteroids.get(i).myCenterY);
     if (d < 30) {
       asteroids.remove(i);
+      i--;
+      asteroids.add(new Asteroid());
     }
   }
   if (wPressed == true) {
