@@ -12,7 +12,7 @@ public void setup()
   for (int i=0; i<nightSky.length; i++) {
     nightSky[i] = new Star();
   }
-  for (int i=0; i<5; i++) {
+  for (int i=0; i<20; i++) {
     asteroids.add(new Asteroid());
   }
 }
@@ -26,18 +26,18 @@ public void draw()
     asteroids.get(i).show();
     asteroids.get(i).move();
     float d = dist((float)bob.myCenterX, (float)bob.myCenterY, (float)asteroids.get(i).myCenterX, (float)asteroids.get(i).myCenterY);
-    if (d < 10) {
+    if (d < 30) {
       asteroids.remove(i);
     }
   }
   if (wPressed == true) {
-    bob.accelerate(0.5);
+    bob.accelerate(0.25);
   }
   if (dPressed == true) {
-    bob.turn(10);
+    bob.turn(5);
   }
   if (aPressed == true) {
-    bob.turn(-10);
+    bob.turn(-5);
   }
   bob.show();
   bob.move();
