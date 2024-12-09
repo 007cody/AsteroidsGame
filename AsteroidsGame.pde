@@ -1,5 +1,5 @@
 Spaceship bob;
-Star[] nightSky = new Star[200];
+Stars[] nightSky = new Stars[200];
 ArrayList <Asteroid> asteroids = new ArrayList <Asteroid>();
 boolean wPressed = false;
 boolean dPressed = false;
@@ -10,7 +10,7 @@ public void setup()
   background(0);
   bob = new Spaceship(width/2, height/2);
   for (int i=0; i<nightSky.length; i++) {
-    nightSky[i] = new Star();
+    nightSky[i] = new Stars();
   }
   for (int i=0; i<20; i++) {
     asteroids.add(new Asteroid());
