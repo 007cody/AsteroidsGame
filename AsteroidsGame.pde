@@ -1,6 +1,6 @@
 Spaceship bob;
 Stars[] nightSky = new Stars[200];
-ArrayList <Double> asteroids = new ArrayList <Double>();
+ArrayList <Asteroid> asteroids = new ArrayList <Asteroid>();
 boolean wPressed = false;
 boolean dPressed = false;
 boolean aPressed = false;
