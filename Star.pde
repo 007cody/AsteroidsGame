@@ -9,4 +9,4 @@ class Stars {
     fill (myColor);
     ellipse (myX, myY, 5, 5);
   }
-}
+} //test
