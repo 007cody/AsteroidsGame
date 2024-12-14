@@ -3,10 +3,9 @@ class Stars {
   public Stars() {
     myX = (int)(Math.random()*800);
     myY = (int)(Math.random()*800);
-    myColor = (int)(Math.random()*255);
   }
   public void show() {
-    fill (myColor);
+    fill ((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
     ellipse (myX, myY, 5, 5);
   }
 } //test
